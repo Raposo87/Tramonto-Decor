@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --main-color: #3b3b41 ;
+    --text-color: #343440;
+    --bg-color: #ebeaea;
+    --header-color: #6c6c75, #53535a, #404044;
+    --color-01: #53535a;
+    --main-text: "Afacad Flux", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+/*-------Cabeçalho-------*/
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+header, footer{
+    background: linear-gradient(50deg,#ffffff,#9e9fa7, #6c6c75, #53535a, #404044);
+    color: #343440;
+    border-radius: 40px;
+    box-shadow: 10px 10px 5px #34344056;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+span{
+  font-family: "Afacad Flux", sans-serif;
+  font-weight: 200;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.Logo-Decor{
+    margin-left: 20px;
+    cursor: default;
+    margin-top: 2px;
+    .imagem{
+        width: 140px;
+        margin-left: 45px;
+    }
+    .titulo{
+        margin-top: -15px;
+    }
+}
+
+.nav a{
+    color: #e2e0e0;
+    padding: 0.5rem 2rem;
+    transition: 0.9s;
+    border-left: solid 5px;
+    border-bottom: solid 5px;
+    border-image: linear-gradient(220deg, transparent 20%,#36363685) 1
+}
+.nav a:hover{
+    color: var(--color-01)
+}
+/*-------/Cabeçalho-------*/
+
+/*-------Home-------*/
+.home-content h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem 5rem 2rem;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -20px;
+}
+p{
+    text-indent: 30px;
+}
+
+.home-img img{
+    margin-left: 30px;
+    box-shadow: 10px 10px 5px 5px #34344056;
+
+}
+
+.home-content{
+    border-left: solid 0.6rem;
+    border-bottom: solid 0.6rem;
+    border-image: linear-gradient(210deg, transparent 60%,var(--color-01))1;
+    width: 50%;
+    font-size: 25px;
+}
+
+.home-content p,  .social-midia {
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+.social-midia:hover{
+    color: #343440;
+
+}
+/*------ /Home------*/
+
+.portifolio h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portifolio-container{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    position: relative;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 2.8rem;
+    border-right: solid 0.6rem;
+    border-bottom: solid 0.6rem;
+    border-image: linear-gradient(150deg, transparent 50%,var(--color-01))1;
+    div{
+        height: 300px;
+        width: 300px;
+    }
+}
+.portifolio-box{
+    position: relative;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.6rem var(--main-color);
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.portifolio-box img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.portifolio-box img:hover{
+    transform: scale(1.1);
+}
+
+.portifolio-box .portifolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(49, 49, 49));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    transform: translateY(30rem);
+    transition: 0.8s ease;
+}
+
+.portifolio-box:hover .portifolio-layer{
+    transform: translateY(0);
+}
+
+.portifolio-layer h4{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.portifolio-layer p{
+    color: #ffffff;
+    margin: 8px 3px 3px;
+}
+
+.portifolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.portifolio-layer a i{
+    font-size: 30px;
+    color: black;
+}
+footer{
+    height: 80px;
+
+}
+
+
+/* ------ Media queries--------*/
+
+/* ------ / Media queries--------*/
