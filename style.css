@@ -113,15 +113,16 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 10px;
     align-items: center;
-    margin-top: -338px;
+    margin-top: -307px;
+    width: 100%;
 }
 
 .home-content{
     border-left: solid 5px;
     border-bottom: solid 5px;
     border-image: linear-gradient(190deg, transparent 40%,var(--color-01))1;
-    width: 100%;
     font-size: 35px;
 }
 
